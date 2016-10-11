@@ -1,0 +1,14 @@
+{{#name}}
+Welcome, {{.}}<br>
+<form action="/create-message" method="post">
+    <input type="text" placeholder="Enter message" name="message"/>
+    <button type="submit">Submit</button>
+</form>
+{{/name}}
+
+{{^name}}
+<form action="/login" method="post">
+    <input type="text" placeholder="Enter Name" name="userName"/>
+    <button type="submit">Login</button>
+</form>
+{{/name}}

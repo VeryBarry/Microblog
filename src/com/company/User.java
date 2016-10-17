@@ -7,10 +7,12 @@ import java.util.ArrayList;
  */
 public class User {
     String name;
-    ArrayList<String> message;
+    String password;
+    ArrayList<String> messages;
 
-    public User(String name, ArrayList<String> message) {
+    public User(String name, String password, ArrayList<String> messages) {
         this.name = name;
-        this.message = message;
+        this.password = password;
+        this.messages = messages;
     }
 }
